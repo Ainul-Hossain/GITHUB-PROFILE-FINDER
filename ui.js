@@ -65,4 +65,29 @@ class Ui {
         currentAlert.remove();
     }
   }
+
+  showRepos(repos){
+    let output = '';
+    //console.log(repos)
+
+    repos.forEach((repo, i)=>{
+        output+=`
+            <div class="card card-body mb-2">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="${repo.html_url}" target="_blank" style="text-decoration:none">${repo.name}</a>
+                    </div>
+                    <div class="col-md-6">
+                        <span class="badge bg-primary mt-2 mt-lg-0">Stars: ${repo.stargazers_count}</span>
+                        <span class="badge bg-secondary mt-2 mt-lg-0">Watchers: ${repo.watchers_count}</span>
+                        <span class="badge bg-success mt-2 mt-lg-0">Forks: ${repo.forks_count}</span>
+                    </div>
+                </div>
+            </div>
+        `
+    })
+
+    //Showing the repos
+    document.getElementById('repos').innerHTML = output;
+  }
 }
