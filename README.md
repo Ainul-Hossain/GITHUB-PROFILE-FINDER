@@ -14,3 +14,7 @@ let secretData = {
 ```
 
 U have to set up ur own clientId and clientSecret from [Github OAuth](https://github.com/settings/applications/new).
+
+Here you go...
+
+![image](https://github.com/Ainul-Hossain/GITHUB-PROFILE-FINDER/assets/99139055/cb75e820-c221-401f-960a-e7135d47e28e)
