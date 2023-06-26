@@ -2,6 +2,14 @@
 
                         ::: Find Any Github Profile and Repositories :::
 
+## Features
+
+- Find anyone's github profile with just github username.
+- Show five latest repositories of any user.
+- Used GitHub API to fetch github profile info.
+
+## Deployment
+
 If u want to deploy or clone this project than u have to add secretData.js file inside main directory.
 
 Inside secretData.js:
